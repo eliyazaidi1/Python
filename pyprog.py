@@ -89,7 +89,6 @@ print(f'Area = {a*b}')
 print(f'Perimeter= {2*(a+b)}')
 
 #Circle
-
 pi = (3.14159)
 r = int(input('Give radius: '))
 
@@ -207,10 +206,12 @@ else:
       print('Thank you, you can vote next time')
     else:
       print('Awesome, let\'s do it')
-
-      dob = input('Which Year,date,month were you born?(DD/MM/YYYY)')
-      dob = dob.split('/')
-      if (a >= 18):
+        
+      date = input('Which Year,date,month were you born?(DD/MM/YYYY)')
+      date = str.split('/')
+      year = int(date[2])
+        
+      if(year<2005)
        print('You are eligible')
       else:
        print('You are underage')
